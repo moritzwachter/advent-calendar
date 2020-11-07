@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  node-cli:
+    image: node:latest
+    env_file:
+      - ./.docker/common.env
+      - ./.env
+    restart: always
+    volumes:
+      - "./:/usr/src/app/:cached"
+    working_dir: "/usr/src/app/"
+    command: sh
+    depends_on:
+      - node
+  node:
+    image: node:latest
+    env_file:
+      - ./.docker/common.env
+      - ./.env
+    restart: always
+    volumes:
+      - "./:/usr/src/app/:cached"
+    working_dir: "/usr/src/app/"
+    ports:
+      - "80:8080"
+    command: npm start
