@@ -21,8 +21,6 @@
 <script>
 import Moment from 'moment'
 
-Moment.locale('de')
-
 export default {
   name: 'Day',
   props: ['day'],
@@ -34,7 +32,6 @@ export default {
       return new Moment()
     },
     isAllowedToView: function () {
-      // return true
       return this.date <= this.now
     },
     year: function () {
