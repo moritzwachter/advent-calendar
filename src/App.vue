@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <Calendar></Calendar>
+    <div class="content">
+      <router-view/>
+    </div>
   </div>
 </template>
 
@@ -65,10 +67,3 @@
     z-index: -100;
   }
 </style>
-
-<script>
-import Calendar from "@/views/Calendar";
-export default {
-  components: {Calendar}
-}
-</script>
