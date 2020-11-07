@@ -4,7 +4,6 @@ services:
   node-cli:
     image: node:latest
     env_file:
-      - ./.docker/common.env
       - ./.env
     restart: always
     volumes:
@@ -16,7 +15,6 @@ services:
   node:
     image: node:latest
     env_file:
-      - ./.docker/common.env
       - ./.env
     restart: always
     volumes:
