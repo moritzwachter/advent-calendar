@@ -5,7 +5,7 @@ how to customize the project to your own needs, visit: https://moritzwachter.de/
 A big thanks to all VueJS contributors and the open-source community!
 
 Furthermore, I want to give credits to the creators of the three used video backgrounds:
-* `snoflakes.mp4` - https://pixabay.com/users/knoxi-3720918/?tab=videos
+* `snowflakes.mp4` - https://pixabay.com/users/knoxi-3720918/?tab=videos
 * `octagon.mp4` - https://pixabay.com/users/tommyvideo-3092371/?tab=videos
 * `particles.mp4` - https://pixabay.com/users/dziarskilisek-10476176/?tab=videos
 
