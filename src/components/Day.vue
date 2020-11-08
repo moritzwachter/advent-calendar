@@ -1,7 +1,7 @@
 <template>
   <div>
     <slot name="back">
-      <router-link to="/">Back to calendar</router-link>
+      <back-to-calendar :year="year"></back-to-calendar>
     </slot>
     <h1 class="headline">{{ date.format('DD. MMMM') }}</h1>
     <main class="page-content" v-if="isAllowedToView">
@@ -20,10 +20,14 @@
 
 <script>
 import Moment from 'moment'
+import BackToCalendar from "@/components/BackToCalendar";
 
 export default {
   name: 'Day',
   props: ['day'],
+  components: {
+    BackToCalendar
+  },
   computed: {
     date: function () {
       return new Moment(this.day, 'DD.MM.YYYY')
@@ -32,7 +36,8 @@ export default {
       return new Moment()
     },
     isAllowedToView: function () {
-      return this.date <= this.now
+      return true
+      // return this.date <= this.now
     },
     year: function () {
       return this.date.format('YYYY')
@@ -46,6 +51,7 @@ export default {
   width: 50%;
   margin: 0 auto;
   flex-flow: column;
+  text-align: center;
 
   background: rgba(#000, 0.3);
   padding: 25px;

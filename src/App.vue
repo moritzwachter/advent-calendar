@@ -1,10 +1,50 @@
 <template>
   <div id="app">
+    <div class="background">
+      <video autoplay loop id="video-background" muted plays-inline>
+        <source :src="video.src" :type="video.type" />
+      </video>
+    </div>
     <div class="content">
       <router-view/>
     </div>
   </div>
 </template>
+
+<script>
+import Moment from 'moment'
+
+export default {
+  name: 'app',
+  data () {
+    return {
+      sources: [
+        {
+          src: require('./assets/octagon.mp4'),
+          type: 'video/mp4'
+        },
+        {
+          src: require('./assets/particles.mp4'),
+          type: 'video/mp4'
+        },
+        {
+          src: require('./assets/snowflakes.mp4'),
+          type: 'video/mp4'
+        },
+      ]
+    }
+  },
+  computed: {
+    video: function () {
+      let day = (new Moment()).format('d')
+      return this.sources[day % this.sources.length];
+
+      // random on every page load:
+      // return this.sources[Math.floor(Math.random() * 3)]
+    }
+  }
+}
+</script>
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css?family=Handlee|Montserrat:300,400');
