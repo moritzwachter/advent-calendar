@@ -17,7 +17,10 @@ import jsSHA from 'jssha'
 
 // create your own secret hash (for example here: https://caligatio.github.io/jsSHA/)
 const SECRET = '760aa5e0943be9e6644b9a1cec57c1caad7a5e1743f474eb1092d5b2489c2d15';
-const PASSWORD_HASH = '3b9bf616da7314dc569d352c06cc2a55c8c19248a7e3f72cf7225245cff75b313c73a6a26bb594082e7706554a5404768e0aedee545721a7ff7bde1dad494d5d'
+// "password" + SECRET
+const PW_INDIVIDUAL = '3b9bf616da7314dc569d352c06cc2a55c8c19248a7e3f72cf7225245cff75b313c73a6a26bb594082e7706554a5404768e0aedee545721a7ff7bde1dad494d5d'
+// "simplified" + SECRET
+const PW_SIMPLIFIED = '7bc794f949443f16d2550cad7457d9fc55a1ee9d3e96b171cc971239ed2cb57c348e5049b456821257dacfcb62292c552c155a6ac884be8249ca223df7b3f69f'
 
 export default {
   name: 'Login',
@@ -34,15 +37,15 @@ export default {
       pw.update(this.pw);
       pw.update(SECRET);
 
-      if (pw.getHash("HEX") === PASSWORD_HASH) {
-        const expiryDate = new Date()
-        expiryDate.setMonth(expiryDate.getMonth() + 2)
+      const expiryDate = new Date()
+      expiryDate.setMonth(expiryDate.getMonth() + 2)
 
+      if (pw.getHash("HEX") === PW_INDIVIDUAL) {
         Cookies.setCookie('REMEMBERME', true, {expires: expiryDate})
-        this.error = false
-
-        // redirect to calendar view
-        this.$router.replace({path: '/'})
+        this.$router.replace({path: '/individual/'})
+      } else if(pw.getHash("HEX") === PW_SIMPLIFIED) {
+        Cookies.setCookie('REMEMBERME2', true, {expires: expiryDate})
+        this.$router.replace({path: '/simplified/'})
       } else {
         this.error = true
       }

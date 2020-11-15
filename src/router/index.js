@@ -28,6 +28,7 @@ import Day21 from '../components/days/Day21.vue'
 import Day22 from '../components/days/Day22.vue'
 import Day23 from '../components/days/Day23.vue'
 import Day24 from '../components/days/Day24.vue'
+import DayFactory from "@/components/simplified/DayFactory";
 
 let days = [
   Day01, Day02, Day03, Day04, Day05, Day06, Day07, Day08, Day09, Day10, Day11, Day12,
@@ -47,6 +48,12 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/:version/day/:day',
+    name: "DayFactory",
+    component: DayFactory,
+    props: true
   }
 ]
 
@@ -63,15 +70,16 @@ const router = new VueRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  if (to.path.includes('/day/') === false) {
+  if (to.path.includes('/login')) {
     next()
     return;
   }
 
   // protect every route which does not include /day/
-  var allowedToPass = Cookies.getCookie('REMEMBERME')
+  var allowedToPassInvidivual = to.path.includes('/individual/') && Cookies.getCookie('REMEMBERME')
+  var allowedToPassSimplified = to.path.includes('/simplified/') && Cookies.getCookie('REMEMBERME2')
 
-  if (allowedToPass) {
+  if (allowedToPassInvidivual || allowedToPassSimplified) {
     next()
   } else {
     next('/login')
