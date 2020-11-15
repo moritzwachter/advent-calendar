@@ -36,8 +36,8 @@ export default {
       return new Moment()
     },
     isAllowedToView: function () {
-      return true
-      // return this.date <= this.now
+      // return true
+      return this.date <= this.now
     },
     year: function () {
       return this.date.format('YYYY')

@@ -2,6 +2,9 @@
 A simple VueJS 2 preset project to create your own advent calendar. If you want to find out more on how it is built and 
 how to customize the project to your own needs, visit: https://moritzwachter.de/2020/advent-calendar-with-vuejs/
 
+There is a second version with simplified `Day` views in a separate branch. Find out more at: 
+https://moritzwachter.de/2020/advent-calendar-with-vuejs-part-2/
+
 A big thanks to all VueJS contributors and the open-source community!
 
 Furthermore, I want to give credits to the creators of the three used video backgrounds:
@@ -13,6 +16,9 @@ Furthermore, I want to give credits to the creators of the three used video back
 ```
 npm install
 ```
+
+### "Debug" mode
+To be able to see all `Day` contents, change the `isAllowedToView` return value to `true`.
 
 ### Compiles and hot-reloads for development
 ```
