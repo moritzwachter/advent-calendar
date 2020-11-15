@@ -1,7 +1,7 @@
 <template>
   <div>
     <slot name="back">
-      <back-to-calendar :year="year"></back-to-calendar>
+      <back-to-calendar :version="version"></back-to-calendar>
     </slot>
     <h1 class="headline">{{ date.format('DD. MMMM') }}</h1>
     <main class="page-content" v-if="isAllowedToView">
@@ -29,6 +29,9 @@ export default {
     BackToCalendar
   },
   computed: {
+    version: function () {
+      return this.$route.params.version ?? ''
+    },
     date: function () {
       return new Moment(this.day, 'DD.MM.YYYY')
     },

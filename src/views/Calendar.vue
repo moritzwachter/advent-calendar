@@ -10,7 +10,7 @@
           :key="i"
         >
           <div>
-            <router-link :to="'/day/' + i">
+            <router-link :to="'/' + version + '/day/' + i">
               {{ i }}
             </router-link>
           </div>
@@ -23,6 +23,7 @@
 <script>
 export default {
   name: 'Calendar',
+  props: ['version'],
   methods: {
     range: function (min, max) {
       let arr = []

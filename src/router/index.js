@@ -38,9 +38,10 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/:version(individual|simplified)',
     name: 'Calendar',
-    component: Calendar
+    component: Calendar,
+    props: true
   },
   {
     path: '/login',
@@ -51,8 +52,9 @@ const routes = [
 
 for (let i = 1; i <= days.length; i++) {
   routes.push({
-    path: '/day/' + i,
-    component: days[i - 1]
+    path: '/:version(individual)/day/' + i,
+    component: days[i - 1],
+    props: { version: 'individual' }
   })
 }
 

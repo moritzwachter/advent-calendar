@@ -1,6 +1,8 @@
 <template>
   <div class="link-back">
-    <router-link :to="calendarPath">Back to calendar</router-link>
+    <router-link :to="calendarPath">
+      Back to calendar
+    </router-link>
   </div>
 </template>
 
@@ -8,12 +10,11 @@
   export default {
     'name': 'back-to-calendar',
     props: [
-      'year'
+      'version'
     ],
     computed: {
       calendarPath: function () {
-        //return (this.year) ? '/' + this.year + '/' : '/login'
-        return '/'
+        return (this.version) ? `/${this.version}/` : '/login'
       }
     }
   }
