@@ -3,6 +3,18 @@
     <slot name="back">
       <back-to-calendar :year="year"></back-to-calendar>
     </slot>
+ <Snowf
+  :amount="50"
+  :size="5"
+  :speed="1.5"
+  :wind="0"
+  :opacity="0.8"
+  :swing="1"
+  :image="null"
+  :zIndex="null"
+  :resize="true"
+  color="#fff"
+/>
     <h1 class="headline">{{ date.format('DD. MMMM') }}</h1>
     <main class="page-content" v-if="isAllowedToView">
       <slot name="page-content" class="page-content"></slot>
@@ -26,7 +38,8 @@ export default {
   name: 'Day',
   props: ['day'],
   components: {
-    BackToCalendar
+    BackToCalendar,
+    Snowf
   },
   computed: {
     date: function () {
