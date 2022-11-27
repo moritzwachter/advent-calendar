@@ -1,16 +1,15 @@
 <template>
   <div id="app">
-    <div :style="image"></div>
     <div class="content">
       <router-view/>
     </div>
     <Snowf
-  :amount="50"
-  :size="5"
-  :speed="1.5"
-  :wind="0"
-  :opacity="0.8"
-  :swing="1"
+  :amount="70"
+  :size="7"
+  :speed="1.2"
+  :wind="2"
+  :opacity="1"
+  :swing="8"
   :image="null"
   :zIndex="null"
   :resize="true"
@@ -31,21 +30,8 @@ export default {
    },
   data () {
     return {
-      sources: [
-        {
-          src: require('./assets/octagon.mp4'),
-          type: 'video/mp4'
-        },
-        {
-          src: require('./assets/particles.mp4'),
-          type: 'video/mp4'
-        },
-        {
-          src: require('./assets/snowflakes.mp4'),
-          type: 'video/mp4'
-        },
-      ]
-    }
+
+    };
   },
   computed: {
     video: function () {
@@ -60,6 +46,7 @@ export default {
 </script>
 
 <style lang="scss">
+
   @import url('https://fonts.googleapis.com/css?family=Handlee|Montserrat:300,400');
 
   html {
@@ -72,9 +59,10 @@ export default {
   }
 
   body {
+
+ 
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    background: #222;
     margin: 0;
     width: 100%;
     max-width: 100%;
@@ -88,9 +76,10 @@ export default {
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 4rem;
     text-shadow: 0 2px 8px #666;
-    margin: 50px;
+    margin-top: 20px;
+    margin: 20px;
 
   @media screen and (max-width: 900px) {
     font-size: 3rem;
@@ -107,16 +96,8 @@ export default {
     font-family: 'Handlee', cursive;
     text-align: center;
   }
-
-  #video-background {
-    /*  making the video fullscreen  */
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
+#app{
+    background-image: url("./assets/background.jpg");
+    background-size: contain, cover;
   }
 </style>
