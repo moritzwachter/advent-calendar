@@ -1,17 +1,16 @@
 <template>
-  <Day day="15.12.2020">
+  <Day day="15.12.2022">
     <div slot="page-content">
       <h3>This is Day 15</h3>
       <p>
-        Feel free to add whatever kind of markup, images, videos or custom JS logic as you like!
+        Merry Christmas Companion! Special of the day: Multichain Launch! You voted, our DAO executed. 
+        Today is the day. Enjoy Aboat going Multichain!
       </p>
-      <p class="caption-img">
-        <img
-            width="300"
-            src="https://placekitten.com/300/300"
-            alt=""
+      <img
+          width="300"
+          src="https://talkaboat.online/assets/images/talkaboat_light.png"
+          alt=""
         >
-      </p>
     </div>
   </Day>
 </template>
