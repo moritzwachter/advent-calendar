@@ -1,17 +1,17 @@
 <template>
-  <Day day="13.12.2020">
+  <Day day="13.12.2022">
     <div slot="page-content">
       <h3>This is Day 13</h3>
       <p>
-        Feel free to add whatever kind of markup, images, videos or custom JS logic as you like!
+        Merry Christmas Companion! Today we have a special for everyone.
+        Part  1 of the first Aboat Sticker series is ready. Watch it right 
+        now on our international Telegram channel.
       </p>
-      <p class="caption-img">
-        <img
-            width="300"
-            src="https://placekitten.com/300/300"
-            alt=""
+      <img
+          width="300"
+          src="https://talkaboat.online/assets/images/talkaboat_light.png"
+          alt=""
         >
-      </p>
     </div>
   </Day>
 </template>

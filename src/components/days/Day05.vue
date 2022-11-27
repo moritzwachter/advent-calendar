@@ -1,13 +1,14 @@
 <template>
-  <Day day="05.12.2020">
+  <Day day="05.12.2022">
     <div slot="page-content">
       <h3>This is Day 5</h3>
       <p>
-        Feel free to add whatever kind of markup, images, videos or custom JS logic as you like!
+         Merry Christmas Companion! To participate in the todays Giveaway simply do the following Tasks:
+        - Click the Link below and register with your Email
       </p>
       <img
           width="300"
-          src="https://placekitten.com/300/300"
+          src="https://talkaboat.online/assets/images/talkaboat_light.png"
           alt=""
       >
     </div>

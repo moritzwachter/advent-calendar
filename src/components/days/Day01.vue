@@ -1,13 +1,16 @@
 <template>
-  <Day day="01.12.2020">
+  <Day day="01.12.2022">
     <div slot="page-content">
-      <h3>This is Day 1</h3>
+      <h3>Day 1</h3>
       <p>
-        Feel free to add whatever kind of markup, images, videos or custom JS logic as you like!
+        Merry Christmas Companion! To participate in the todays Giveaway simply do the following Tasks:
+        - Follow our Profile Twitter -Link-
+        - Like & Share our pinned Post
+        - Place a comment using the hashtags #AboatEntertainment #Crypto
       </p>
       <img
           width="300"
-          src="https://placekitten.com/300/300"
+          src="https://talkaboat.online/assets/images/talkaboat_light.png"
           alt=""
       >
     </div>

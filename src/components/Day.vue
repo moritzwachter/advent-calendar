@@ -3,6 +3,7 @@
     <slot name="back">
       <back-to-calendar :year="year"></back-to-calendar>
     </slot>
+
     <h1 class="headline">{{ date.format('DD. MMMM') }}</h1>
     <main class="page-content" v-if="isAllowedToView">
       <slot name="page-content" class="page-content"></slot>

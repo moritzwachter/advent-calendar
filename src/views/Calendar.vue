@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h1>Merry Christmas</h1>
-    <h2>to you!</h2>
+    <h1>.....</h1>
+    <h1>ABOAT CHRISTMAS CALENDAR</h1>
+    <h2>Merry Christmas!</h2>
     <div class="cards-wrapper">
       <ul class="cards">
         <li
@@ -40,9 +41,10 @@ export default {
 <style lang="scss" scoped>
 .cards-wrapper {
   width: 1200px;
-  height: 600px;
+  height: 800px;
   margin: 0 auto;
   max-width: 100%;
+
 }
 
 .cards {
@@ -63,8 +65,8 @@ export default {
 
   margin: 35px;
 
-  background: rgba(#000, 0.1);
-  border: 1px solid #fff;
+  background: rgba(#888, 0.1);
+  border: 4px solid rgb(146, 188, 10);
 
   display: flex;
   align-items: center;
@@ -74,13 +76,13 @@ export default {
 
   &:hover {
     cursor: pointer;
-    background: rgba(#000, 0.3);
-    box-shadow: 0 0 20px rgba(#fff ,0.3);
+    background: rgba(#888, 0.3);
+    box-shadow: 0 0 20px rgba(rgb(146, 188, 10) ,0.3);
   }
 
   a {
-    outline: 0;
-    color: #fff;
+    outline: 1;
+    color: rgb(146, 188, 10);
     text-decoration: none;
 
     width: 100%;

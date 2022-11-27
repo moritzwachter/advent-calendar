@@ -1,17 +1,17 @@
 <template>
-  <Day day="17.12.2020">
+  <Day day="17.12.2022">
     <div slot="page-content">
       <h3>This is Day 17</h3>
       <p>
-        Feel free to add whatever kind of markup, images, videos or custom JS logic as you like!
+          Merry Christmas Companion! To participate in the todays Giveaway simply do the following Tasks:
+        - Join our international Telegram Group - Link
+        - Write "Aboat_takes_Entertainment_to_the_next_Level" into the chat
       </p>
-      <p class="caption-img">
-        <img
-            width="300"
-            src="https://placekitten.com/300/300"
-            alt=""
+      <img
+          width="300"
+          src="https://talkaboat.online/assets/images/talkaboat_light.png"
+          alt=""
         >
-      </p>
     </div>
   </Day>
 </template>
