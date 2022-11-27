@@ -1,21 +1,34 @@
 <template>
   <div id="app">
-    <div class="background">
-      <video autoplay loop id="video-background" muted plays-inline>
-        <source :src="video.src" :type="video.type" />
-      </video>
-    </div>
+    <div :style="image"></div>
     <div class="content">
       <router-view/>
     </div>
+    <Snowf
+  :amount="50"
+  :size="5"
+  :speed="1.5"
+  :wind="0"
+  :opacity="0.8"
+  :swing="1"
+  :image="null"
+  :zIndex="null"
+  :resize="true"
+  color="#fff"
+/>
   </div>
 </template>
 
 <script>
+import Snowf from 'vue-snowf';
 import Moment from 'moment'
 
 export default {
   name: 'app',
+      
+  components: {
+  Snowf
+   },
   data () {
     return {
       sources: [
