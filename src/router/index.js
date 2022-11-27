@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Calendar from '../views/Calendar.vue'
+import Login from '@/components/Login.vue'
 import * as Cookies from 'tiny-cookie'
+
 
 import Day01 from '../components/days/Day01.vue'
 import Day02 from '../components/days/Day02.vue'
@@ -40,6 +42,11 @@ const routes = [
     path: '/',
     name: 'Calendar',
     component: Calendar
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
   }
 ]
 
