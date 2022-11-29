@@ -1,7 +1,7 @@
 <template>
   <Day day="27.11.2022">
     <div slot="page-content">
-      <h3>Day 1</h3>
+      <h3>Twitter Challenge</h3>
       <p class = textbox>
        Ahoi, landlubbers! To participate in the todays <font size= "6"><b>Giveaway</b></font> simply do the following tasks:
         <ul>
