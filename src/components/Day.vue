@@ -54,6 +54,7 @@ export default {
   flex-flow: column;
   text-align: block;
   z-index: 100;
+  color: rgb(253,189,100);
 
   background: rgba(#000, 0.3);
   padding: 25px;

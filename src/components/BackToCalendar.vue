@@ -36,7 +36,7 @@
     }
 
     a {
-      color: white;
+      color: rgb(100, 164, 253);
       z-index: 100;
     }
   }
