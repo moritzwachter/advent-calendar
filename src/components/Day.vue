@@ -15,8 +15,9 @@
           Seems like you need to be a little more patient ;-)
         </p>
       </div>
-    </main>
+    </main>  
   </div>
+
 </template>
 
 <script>
@@ -43,7 +44,8 @@ export default {
     year: function () {
       return this.date.format('YYYY')
     }
-  }
+  },
+ 
 }
 </script>
 
@@ -53,6 +55,7 @@ export default {
   margin: 0 auto;
   flex-flow: column;
   text-align: center;
+  z-index: 100;
 
   background: rgba(#000, 0.3);
   padding: 25px;

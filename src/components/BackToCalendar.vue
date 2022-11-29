@@ -25,6 +25,7 @@
     justify-content: center;
     padding-top: 20px;
     font-size: 24px;
+    z-index: 100;
 
     @media screen and (max-width: 900px) {
       font-size: 20px;
@@ -36,6 +37,7 @@
 
     a {
       color: white;
+      z-index: 100;
     }
   }
 </style>

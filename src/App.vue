@@ -4,14 +4,14 @@
       <router-view/>
     </div>
     <Snowf
-  :amount="70"
-  :size="7"
+  :amount="60"
+  :size="5"
   :speed="1.2"
   :wind="2"
-  :opacity="1"
-  :swing="8"
+  :opacity="0.8"
+  :swing="2"
   :image="null"
-  :zIndex="null"
+  :zIndex="0"
   :resize="true"
   color="#fff"
 />
@@ -19,19 +19,14 @@
 </template>
 
 <script>
-import Snowf from 'vue-snowf';
+
 import Moment from 'moment'
+import Snowf from 'vue-snowf';
 
 export default {
   name: 'app',
-      
-  components: {
-  Snowf
-   },
-  data () {
-    return {
-
-    };
+  components:{
+    Snowf
   },
   computed: {
     video: function () {
@@ -42,6 +37,7 @@ export default {
       // return this.sources[Math.floor(Math.random() * 3)]
     }
   }
+ 
 }
 </script>
 
@@ -71,24 +67,24 @@ export default {
   }
 
   a {
-    color: white;
+    color: rgb(62, 59, 59);
     outline: none;
   }
 
   h1 {
     font-size: 4rem;
     text-shadow: 0 2px 8px #666;
-    margin-top: 20px;
+    padding-top: 1;
     margin: 20px;
 
   @media screen and (max-width: 900px) {
     font-size: 3rem;
-    margin: 30px;
+
   }
 
   @media screen and (max-width: 400px) {
     font-size: 2rem;
-    margin: 25px;
+
   }
   }
 
@@ -99,5 +95,6 @@ export default {
 #app{
     background-image: url("./assets/background.jpg");
     background-size: contain, cover;
+    z-index: -100;
   }
 </style>
