@@ -76,5 +76,14 @@ export default {
       z-index: 500;
     }
   }
+  passowrd{
+    z-index: 500;
+  }
+  form{
+    z-index: 500
+  }
+  submit{
+    z-index: 500
+  }
 }
 </style>
