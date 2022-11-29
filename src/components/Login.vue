@@ -76,13 +76,13 @@ export default {
       z-index: 500;
     }
   }
-  passowrd{
+  .passowrd{
     z-index: 500;
   }
-  form{
+  .form{
     z-index: 500
   }
-  submit{
+  .submit{
     z-index: 500
   }
 }
