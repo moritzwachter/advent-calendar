@@ -16,7 +16,7 @@ import * as Cookies from 'tiny-cookie'
 import jsSHA from 'jssha'
 // create your own secret hash (for example here: https://caligatio.github.io/jsSHA/)
 const SECRET = '760aa5e0943be9e6644b9a1cec57c1caad7a5e1743f474eb1092d5b2489c2d15';
-const PASSWORD_HASH = '3b9bf616da7314dc569d352c06cc2a55c8c19248a7e3f72cf7225245cff75b313c73a6a26bb594082e7706554a5404768e0aedee545721a7ff7bde1dad494d5d'
+const PASSWORD_HASH = '64248b4f674937b25aaa1f1ff895529371d5df0c7008186b738a8e7a5ef1b212b5b24925aefa37def7c536a1f3dd91026835c14621efc582932deb4917f414a0'
 export default {
   name: 'Login',
   data () {
@@ -55,6 +55,7 @@ export default {
   text-align: center;
   background: rgba(#000, 0.3);
   padding: 25px;
+  z-index: index 500;
   @media screen and (max-width: 900px) {
     width: 75%;
   }
@@ -67,10 +68,12 @@ export default {
     background: rgba(#fff, 0.3);
     color: white;
     border: 1px solid black;
+    z-index: 500;
   }
   button {
     &:hover {
       cursor: pointer;
+      z-index: 500;
     }
   }
 }
