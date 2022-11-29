@@ -21,12 +21,15 @@
 
 <script>
 import Day from '../Day.vue'
-data: function() {
+
+
+src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.min.js">;
+export default {
+  data: function() {
     return {
       text: "Twitter"
     };
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.min.js"></script>
-export default {
+  },
   name: 'Day01',
   components: {
     Day
