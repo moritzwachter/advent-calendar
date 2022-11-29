@@ -23,7 +23,6 @@
 import Day from '../Day.vue'
 
 
-src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.min.js">;
 export default {
   data: function() {
     return {
@@ -35,4 +34,5 @@ export default {
     Day
   }
 }
+src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.min.js">
 </script>
