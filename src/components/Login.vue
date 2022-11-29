@@ -5,8 +5,8 @@
       <div class="error" v-if="error">
         An error occured. Please try again!
       </div>
-      <input type="password" v-on:keyup.enter="checkLogin" v-model="pw">
-      <button type="submit" v-on:click="checkLogin">Login</button>
+      <input class="password" type="password" v-on:keyup.enter="checkLogin" v-model="pw">
+      <button class="submit" type="submit" v-on:click="checkLogin">Login</button>
     </div>
   </div>
 </template>
