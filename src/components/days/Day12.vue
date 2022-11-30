@@ -1,7 +1,7 @@
 <template>
   <Day day="12.12.2022">
     <div slot="page-content">
-      <h3>Quizmaster Day</h3>
+      <h3>We need you!</h3>
       <p class = textbox>
        Ahoi, landlubbers! To participate in the todays <font size= "6"><b>Giveaway</b></font> simply do the following tasks:
         <ul>

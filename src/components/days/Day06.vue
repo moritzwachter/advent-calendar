@@ -5,7 +5,7 @@
       <p class = textbox>
        Ahoi, landlubbers! To participate in the todays <font size= "6"><b>Giveaway</b></font> simply do the following tasks:
         <ul>
-        <li><div class=link>Find the missing Aboat mascot on our Website &nbsp; <a href="https://talkaboat.online/" target="_blank">  <b>Website</b> </a> </div></li>
+        <li><div class=link>Find the missing Aboat mascot on our &nbsp; <a href="https://talkaboat.online/" target="_blank">  <b>Website</b> </a> </div></li>
         <li>Click on our Mascot and register for the today's Givaway</li>
        </ul>
        
