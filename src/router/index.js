@@ -65,7 +65,7 @@ router.beforeEach((to, from, next) => {
   if (allowedToPass) {
     next()
   } else {
-    next('/Calendar')
+    next()
   }
  
 })
