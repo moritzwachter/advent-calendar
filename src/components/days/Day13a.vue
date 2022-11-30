@@ -1,12 +1,12 @@
 <template>
-  <Day day="06.12.2022">
+  <Day day="05.12.2022">
     <div slot="page-content">
-      <h3>Aboatie overboard</h3>
+      <h3>Raffle Day</h3>
       <p class = textbox>
        Ahoi, landlubbers! To participate in the todays <font size= "6"><b>Giveaway</b></font> simply do the following tasks:
         <ul>
-        <li><div class=link>Find the missing Aboat mascot on our Website &nbsp; <a href="https://talkaboat.online/" target="_blank">  <b>Website</b> </a> </div></li>
-        <li>Click on our Mascot and register for the today's Givaway</li>
+        <li><div class=link>Click this &nbsp; <a href="https://wichtelmania.com/g/BAQ4jX5ng6zWJ3" target="_blank">  <b>Link</b> </a> </div></li>
+        <li>Register with your Twitter or Telegram handle</li>
        </ul>
        
       </p>
