@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Calendar from '../views/Calendar.vue'
-
+import * as Cookies from 'tiny-cookie'
 
 
 import Day01 from '../components/days/Day01.vue'
@@ -60,7 +60,13 @@ router.beforeEach((to, from, next) => {
     next()
     return;
   }
+  var allowedToPass = Cookies.getCookie('REMEMBERME')
 
+  if (allowedToPass) {
+    next()
+  } else {
+    next('/login')
+  }
  
 })
 
