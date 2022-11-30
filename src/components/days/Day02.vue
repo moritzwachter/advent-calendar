@@ -1,11 +1,11 @@
 <template>
-  <Day day="27.11.2022">
+  <Day day="02.12.2022">
     <div slot="page-content">
-      <h3>Day 1</h3>
+      <h3>Instagram Challenge</h3>
       <p class = textbox>
        Ahoi, landlubbers! To participate in the todays <font size= "6"><b>Giveaway</b></font> simply do the following tasks:
         <ul>
-        <li><div class=link>Follow our profile on &nbsp; <a href="https://twitter.com/talkaboat" target="_blank">  <b>Twitter</b> </a> </div></li>
+        <li><div class=link>Follow our profile on &nbsp; <a href="https://www.instagram.com/talkaboat/" target="_blank">  <b>Instagram</b> </a> </div></li>
         <li>Like & Share our pinned post</li>
         <li>Place a comment using the hashtags #AboatEntertainment and #Crypto</li>
        </ul>
