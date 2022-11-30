@@ -1,5 +1,5 @@
 <template>
-    <Day day="27.11.2022">
+    <Day day="01.12.2022">
         <div slot="page-content">
             <h3>Twitter Challenge</h3>
             <p class=t extbox>
